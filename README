@@ -1,0 +1,12 @@
+Freshmeat-Ruby 0.1.0 README
+===========================
+
+Overview
+========
+Ruby (http://ruby-lang.org/) bindings for the Freshmeat.net XML-RPC
+interface.
+
+About the Author
+================
+Paul Duncan <pabs@pablotron.org>
+http://www.pablotron.org/
