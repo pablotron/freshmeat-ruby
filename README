@@ -1,10 +1,49 @@
 Freshmeat-Ruby 0.1.0 README
 ===========================
 
+This file was last updated at Fri Jun 10 04:09:00 2005.  Please see the
+file COPYING for licensing and warranty information.  The latest version
+of this software is available at the following URL:
+
+  http://pablotron.org/software/freshmeat-ruby/
+
 Overview
 ========
 Ruby (http://ruby-lang.org/) bindings for the Freshmeat.net XML-RPC
-interface.
+interface (http://freshmeat.net/faq/view/49/).
+
+System Requirements
+===================
+Freshmeat-Ruby requires Ruby 1.8.0 or newer.  You'll also need an
+account on Freshmeat.
+
+Using Freshmeat-Ruby
+====================
+Here's a brief example to get you started:
+
+  # connect to Freshmeat as user 'matz' with password 'jujifruit', 
+  # then get a list of your projects
+  fm = Freshmeat.new('matz', 'jujifruit')
+  projects = fm.projects
+
+  # now publish a new minor release of the project 'foobar2000'
+  changes = 'Cleaned up documentation.'
+  fm.publish('foobar2000', 'Default', '1.1.1', changes, 2)
+
+Full API documentation is available in the doc/ directory, or online at 
+http://pablotron.org/software/freshmeat-ruby/doc/.
+
+Reporting Bugs
+==============
+Have a bug to report or a feature you'd like me to add to
+Freshmeat-Ruby?  Feel free to email me at the address below.
+Alternatively, you can submit your feature request or bug directly to
+the Freshmeat-Ruby bug-tracking web interface at the following URL:
+
+  http://bugs.pablotron.org/
+
+(note that you'll need to create an account in order to submit a feature
+request or a bug report via the web interface).
 
 About the Author
 ================
